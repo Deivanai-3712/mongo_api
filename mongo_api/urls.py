@@ -16,7 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from mongo_app.views import TestDataPost,DataPost, ConversationDetails, EmailSummaryDetails, FilterData
+from mongo_app.views import TestDataPost, DataPost, ConversationDetails, EmailSummaryDetails, FilterData
 
 urlpatterns = [
     path('admin/', admin.site.urls),

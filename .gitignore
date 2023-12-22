@@ -1,1 +1,5 @@
 media/
+mongo_api/__pycache__/
+mongo_app/__pycache__/
+mongo_app/migrations/__pycache__/
+
