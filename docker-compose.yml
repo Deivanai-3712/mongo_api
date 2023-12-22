@@ -1,0 +1,17 @@
+version: '2.1'
+
+networks:
+  mongo_network:
+    external: true
+
+services:
+  api:
+    image: samsungssi/mongo:3.9.19.0
+    environment:
+      CONNECTION_STRING: "mongodb://105.128.97.199:27107/"
+      DATABASE_NAME: "logistics"
+      COLLECTION_NAME: "emails"
+    ports:
+      - 8081:80
+    networks:
+      - mongo_network
